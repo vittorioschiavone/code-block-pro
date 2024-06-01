@@ -6,7 +6,7 @@ if (!class_exists('CBPRouter')) {
     {
         protected static $instance = null;
         protected $namespace = 'code-block-pro/v1';
-        protected $capability = 'edit_posts';
+        protected $capability = 'edit_codeblocks';
         public function getHandler($namespace, $endpoint, $callback)
         {
             \register_rest_route(
